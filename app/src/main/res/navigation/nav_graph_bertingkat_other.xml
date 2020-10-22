@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_bertingkat_other"
+    app:startDestination="@id/nav_bertingkat_three_frag">
+
+    <fragment
+        android:id="@+id/nav_bertingkat_three_frag"
+        android:name="com.odlsoon.learn_android_kotlin_jetpack_arch.navigation_bertingkat.NavigationBertingkatThreeFragment"
+        android:label="navigation_bertingkat_three_frag"
+        tools:layout="@layout/navigation_bertingkat_three_frag" />
+
+</navigation>

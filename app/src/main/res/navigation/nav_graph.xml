@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_one_frag">
+
+    <fragment
+        android:id="@+id/nav_one_frag"
+        android:name="com.odlsoon.learn_android_kotlin_jetpack_arch.navigation.NavigationOneFragment"
+        android:label="navigation_one_frag"
+        tools:layout="@layout/navigation_one_frag" >
+        <action
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            android:id="@+id/action_open_nav_two_frag"
+            app:destination="@id/nav_two_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_two_frag"
+        android:name="com.odlsoon.learn_android_kotlin_jetpack_arch.navigation.NavigationTwoFragment"
+        android:label="navigation_two_frag"
+        tools:layout="@layout/navigation_two_frag" >
+
+        <action
+            app:popUpTo="@id/nav_one_frag"
+            android:id="@+id/action_back_to_nav_one_frag"/>
+
+    </fragment>
+
+</navigation>
